@@ -14,7 +14,7 @@ const SearchButton = ({ otherClasses }:{otherClasses:string}) => (
     className='object-contain'/>
   </button>
 )
-function SearchBar({setManufacturer,setModel}) {
+function SearchBar({setManufacturer,setModel}:{setManufacturer:(searchManufacturer:string)=>void,setModel:(searchModel:string)=>void}) {
   const [searchManufacturer, setSearchManufacturer] = useState('');
   const [searchModel, setSearchModel] = useState('');
   const router = useRouter();
