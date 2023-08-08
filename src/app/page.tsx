@@ -49,9 +49,9 @@ const [allCars, setAllCars] = useState([])
   };
 
   useEffect(() => {
-    getCars()
+    getCars();
   
-  }, [fuel,year,limit,manufacturer,model])
+  }, [fuel,year,limit,manufacturer,model])// eslint-disable-line react-hooks/exhaustive-deps
   
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 console.log(allCars)
